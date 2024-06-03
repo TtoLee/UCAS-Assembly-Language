@@ -1,4 +1,8 @@
 ## 汇编语言第8次作业
+
+**李金明 2021K8009929016**
+
+
 **找一段包含嵌入式汇编的C代码或函数，将其转换为汇编代码，并给出注释和分析报告。**  
 **可以从linux/include/asm-i386/string.h选取**  
 **函数中把static inline去掉，gcc -m32 -O1 -S xxx.c**  
@@ -6,8 +10,7 @@
 **也可以从其他开源代码中选取，如github中** 
 ***
 ### 选取代码
-所选取的代码是`linux/arch/x86/include/asm
-/checksum_32.h`中的`ip_fast_csum`函数，函数源代码如下：
+所选取的代码是`linux/arch/x86/include/asm/checksum_32.h`中的`ip_fast_csum`函数，函数源代码如下：
 ```c
 static inline __sum16 ip_fast_csum(const void *iph, unsigned int ihl)
 {
