@@ -26,6 +26,7 @@ unsigned int shld5(unsigned int a, unsigned int b) {
             "movl %%edi, %0\n\t"
             : "=r" (result)
             : "r" (a), "r" (b)
+            : "%ebx", "%edi"
         );
         return result;
 }
